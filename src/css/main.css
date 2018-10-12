@@ -34,6 +34,10 @@ a {
     color: #74C476
 }
 
+li {
+    font-size: 1.25em;
+}
+
 
 /* SVG styling */
 svg {
@@ -55,7 +59,7 @@ input[type=range] {
 }
 
 #controlDiv {
-    margin: 0 2em;
+    margin: 0 1em;
     
 }
 

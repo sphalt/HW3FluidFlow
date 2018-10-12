@@ -34,18 +34,28 @@
         <p>This is a visualization of a computational fluid flow simulation dataset from the San Diego Supercomputing Center. You can learn more about the science behind the simulation <a href="http://www.uni-kl.de/sciviscontest/">here.</a></a> </p>
         <p>Use the slider given below to move the plane along the Z-axis. Use the mouse (drag) inside the canvas to rotate and scroll to zoom and pan. </p>
     </div>
+    <div id="controlDiv">
+        <input type="range" id="planePos" value="0">
+        <input type="button" id="colorBtn" value="Color all points">
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="particleDiv col-md-6">
                 <div id="scene"></div>
             </div>
             <div class="sliceDiv col-md-6">
-                <div id="controlDiv">
-                    <input type="range" id="planePos" value="0">
-                    <input type="button" id="colorBtn" value="Color all points">
-                </div>
+                
             </div>
         </div>
+    </div>
+    <div id="credits" >
+        <p>This visualization is part of the coursework for <a href="https://www.evl.uic.edu/cs594/missive.php">CS 594 Visual Data Science</a> class. Here's all the resources I used while creating the visualization -</p>
+        <ul>
+            <li><a href="https://threejs.org/">Three.js</a> Project. Used under the <a href="https://opensource.org/licenses/MIT">MIT</a> licence</li>
+            <li><a href="https://d3js.org/">D3.js</a> Project. Used under the <a href="https://opensource.org/licenses/MIT">MIT</a> licence</li>
+            <li><a href="https://jquery.com/">JQuery</a> Project. Used under the <a href="https://opensource.org/licenses/MIT">MIT</a> licence</li>
+            <li><a href="http://getbootstrap.com/">Bootstrap</a> Project. Used under the <a href="https://opensource.org/licenses/MIT">MIT</a> licence</li>            
+        </ul>
     </div>
 
 </body>
