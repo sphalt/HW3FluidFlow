@@ -33,9 +33,9 @@ var ParticleSystem = function() {
         .domain([bounds.minY, bounds.maxY])
         .range([30, 400]);
 
-    var colorScale = d3.scaleThreshold()
-        .domain([0,5])
-        .range(d3.schemeGreens[5])
+    var colorScale = d3.scaleLinear()
+        .domain([0,10])
+        .range(['#c7e9c0', '#a1d99b', '#74c476', '#41ab5d', '#238b45', '#006d2c', '#00441b'])
 
     // 2d plane filter
     // var clippingPlane = new THREE.Plane( new THREE.Vector3( 0, 0, 1 ), 0 )
