@@ -41,7 +41,7 @@ var ParticleSystem = function() {
     // var clippingPlane = new THREE.Plane( new THREE.Vector3( 0, 0, 1 ), 0 )
     // console.log(clippingPlane);
     // var plane = new THREE.PlaneHelper( clippingPlane, 25, 0x777777 )
-    var plane = new THREE.Mesh( new THREE.PlaneGeometry( 20, 20, 15, 15), new THREE.MeshStandardMaterial( {color: 0xa3a3a3, side: THREE.DoubleSide, opacity: 0.1, transparent: true} ));
+    var plane = new THREE.Mesh( new THREE.PlaneGeometry( 20, 20, 15, 15), new THREE.MeshStandardMaterial( {color: 0xa3a3a3, side: THREE.DoubleSide, opacity: 0.1, transparent: true, wireframe: true} ));
 
     // rotate using orbitControls
     var controls = new THREE.OrbitControls( App.scene.camera(), App.scene.renderer().domElement );
